@@ -176,9 +176,6 @@ select customer_id, count(*) as no_of_accounts from accounts
 group by customer_id
 having count(*)>1;
 
--- 9.Write a SQL query to Calculate the difference in transaction amounts between deposits and withdrawals.
-
-
 -- 10. Write a SQL query to Calculate the average daily balance for each account over a specified period.
 select account_id, avg(amount) as avg_daily_balance from transactions
 group by account_id;
